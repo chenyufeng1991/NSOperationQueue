@@ -16,8 +16,8 @@
 
   @autoreleasepool {
     NSLog(@"task %i 开始 … ",self.operationID);
+    
     [NSThread sleepForTimeInterval:3];
-    NSLog(@"task %i 结束 ",self.operationID);
 
   }
   
