@@ -12,15 +12,12 @@
 
 @implementation MyTask
 
-- (void)main{
-
-  @autoreleasepool {
+- (void)main
+{
+  @autoreleasepool{
     NSLog(@"task %i 开始 … ",self.operationID);
-    
     [NSThread sleepForTimeInterval:3];
-
   }
-  
 }
 
 @end
