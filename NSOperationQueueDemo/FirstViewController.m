@@ -34,7 +34,7 @@
 
     //给队列起一个名字；
     self.queue.name = @"还可以给队列起一个名字";
-    //设置队列的最大并发数；
+    //设置队列的最大并发数，默认是-1，-1表示没有限制
     [self.queue setMaxConcurrentOperationCount:5];
 
     MyTask *task01 = [[MyTask alloc] init];
