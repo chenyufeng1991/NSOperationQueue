@@ -29,6 +29,7 @@
     NSLog(@"%s",__func__);
     [super viewWillAppear:animated];
 
+    //初始化队列
     self.queue = [[NSOperationQueue alloc] init];
 
     //给队列起一个名字；

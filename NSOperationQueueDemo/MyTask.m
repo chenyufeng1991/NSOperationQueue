@@ -12,6 +12,7 @@
 
 @implementation MyTask
 
+//任务会自动回调main方法
 - (void)main
 {
   @autoreleasepool{
