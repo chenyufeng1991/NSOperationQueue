@@ -48,6 +48,8 @@
     [task02 setQueuePriority:NSOperationQueuePriorityVeryHigh];
 
     //设置任务间的从属关系；task02会在task01执行完之后才开始执行；当然也可以移除从属关系；
+    //使用removeDependency解除依赖。
+    //不能添加相互依赖，比如A依赖B，B依赖A，会造成死锁。
     [task02 addDependency:task01];
 
     [self.queue addOperation:task01];
