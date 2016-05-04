@@ -10,6 +10,7 @@
 #import "FirstViewController.h"
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
+#import "FourthViewController.h"
 
 @interface AppDelegate ()
 
@@ -29,13 +30,16 @@
     secondVC.title = @"图片下载";
     ThirdViewController *thirdVC = [[ThirdViewController alloc] init];
     thirdVC.title = @"NSInvocationOperation";
+    FourthViewController *fourVC = [[FourthViewController alloc] init];
+    fourVC.title = @"NSBlockOperation";
 
     UINavigationController *firstNavi = [[UINavigationController alloc] initWithRootViewController:firstVC];
     UINavigationController *secondNavi = [[UINavigationController alloc] initWithRootViewController:secondVC];
     UINavigationController *thirdNavi = [[UINavigationController alloc] initWithRootViewController:thirdVC];
+    UINavigationController *fourNavi = [[UINavigationController alloc] initWithRootViewController:fourVC];
 
     self.tabController = [[UITabBarController alloc] init];
-    self.tabController.viewControllers = @[firstNavi,secondNavi,thirdNavi];
+    self.tabController.viewControllers = @[firstNavi,secondNavi,thirdNavi,fourNavi];
 
     [self.window setRootViewController:self.tabController];
     [self.window makeKeyAndVisible];
