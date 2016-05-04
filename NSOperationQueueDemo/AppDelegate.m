@@ -24,11 +24,11 @@
     self.window.backgroundColor = [UIColor whiteColor];
 
     FirstViewController *firstVC = [[FirstViewController alloc] init];
-    firstVC.title = @"第一页";
+    firstVC.title = @"基本操作";
     SecondViewController *secondVC = [[SecondViewController alloc] init];
-    secondVC.title = @"第二页";
+    secondVC.title = @"图片下载";
     ThirdViewController *thirdVC = [[ThirdViewController alloc] init];
-    thirdVC.title = @"第三页";
+    thirdVC.title = @"NSInvocationOperation";
 
     UINavigationController *firstNavi = [[UINavigationController alloc] initWithRootViewController:firstVC];
     UINavigationController *secondNavi = [[UINavigationController alloc] initWithRootViewController:secondVC];
