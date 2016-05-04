@@ -23,7 +23,7 @@
 
 }
 
-//在这里要实现NSInvocationOperation
+//在这里要实现NSInvocationOperation-------调度操作
 /**
  *  NSInvocationOperation是NSOperation的子类。
  使用比较方便，是用一个对象和selector进行操作。

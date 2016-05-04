@@ -21,7 +21,7 @@
 }
 
 /**
- *  这里要实现NSBlockOperation,NSBlockOperation也是NSOperation的子类。
+ *  这里要实现NSBlockOperation,NSBlockOperation也是NSOperation的子类。------块操作
  *
  可以添加多个block进行操作。官方文档中说明，对于多个block，我么不需要去创建不同的operation对象，而可以直接使用NSBlockOperation
  */
