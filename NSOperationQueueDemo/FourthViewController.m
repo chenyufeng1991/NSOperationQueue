@@ -42,6 +42,11 @@
     }];
 
     [operation start];
+
+    //NSOperationQueue中获取主线程
+    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+        NSLog(@"这里是主线程");
+    }];
 }
 
 @end
